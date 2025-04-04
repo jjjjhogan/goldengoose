@@ -13,7 +13,12 @@ padding: 0;
     }
 }
 
-
+body.bg-img{
+    background-image: linear-gradient(to right, rgba(255,255,255, 0.7) 0 100%),url("/City_Of_Champions.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
 
 /* STYLING */
 
@@ -23,7 +28,12 @@ section{
     padding-bottom: 15%;
 }
 
-nav-link{
+.navbar{
+    background-color: rgba(250,250,250,.7);
+    /*#ffffff; */
+}
+.nav-link{
     color: black;
     font-size: 1.1rem;
 }
+
