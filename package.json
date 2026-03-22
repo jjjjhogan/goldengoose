@@ -1,0 +1,29 @@
+{
+  "name": "goldengoose",
+  "version": "1.0.0",
+  "description": "static artist website for goldengoose",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjjjhogan/goldengoose.git"
+  },
+  "keywords": [
+    "website",
+    "goldengoose",
+    "music",
+    "portfolio"
+  ],
+  "author": "John Hogan",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/jjjjhogan/goldengoose/issues"
+  },
+  "homepage": "https://github.com/jjjjhogan/goldengoose#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "sass": "^1.98.0"
+  }
+}
