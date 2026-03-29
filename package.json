@@ -4,8 +4,11 @@
   "description": "static artist website for goldengoose",
   "main": "script.js",
   "scripts": {
-    "test": "echo \\\"Error: no test specified\\\" && exit 0"
-  },
+  "sass": "sass static/scss/custom.scss static/css/style.css",
+  "sass:watch": "sass --watch static/scss/custom.scss:static/css/style.css --style=expanded",
+  "sass:build": "sass static/scss/custom.scss static/css/style.css --style=compressed",
+  "test": "echo \"Error: no test specified\" && exit 0"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jjjjhogan/goldengoose.git"
