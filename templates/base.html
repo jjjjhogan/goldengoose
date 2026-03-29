@@ -40,22 +40,23 @@
                         <a class="nav-link" href="{{ url_for('countdown') }}">Countdown</a>
                      </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('mischief') }}">Socials</a>
-                    </li>
+                 
 
                     <!-- Albums dropdown -->
-                    <li class="nav-item albums">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button"
-                        data-bs-toggle="albums" aria-expanded="false">
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         Albums / Singles
                         </a>
                         <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="{{ url_for('captivated') }}">Captivated</a>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="{{ url_for('mischief') }}">Making of Mischief</a>
                             </li>
                             <li>
-                                <a href="{{url_for('singles' )}}" class="dropdown-item"></a>
+                                <a class="dropdown-item" href="{{ url_for('captivated') }}">Captivated by the Current</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="{{url_for('singles' )}}">Singles</a>
                             </li>
                 <!-- Add more routes later -->
                         </ul>
@@ -82,6 +83,7 @@
     <main>
         {% block content %}{% endblock %}
     </main>
-
+    <script type="module" src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
