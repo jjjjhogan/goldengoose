@@ -2,13 +2,13 @@
   "name": "goldengoose",
   "version": "1.0.0",
   "description": "static artist website for goldengoose",
-  "main": "script.js",
+  "type": "module",
   "scripts": {
-  "sass": "sass static/scss/custom.scss static/css/style.css",
-  "sass:watch": "sass --watch static/scss/custom.scss:static/css/style.css --style=expanded",
-  "sass:build": "sass static/scss/custom.scss static/css/style.css --style=compressed",
-  "test": "echo \"Error: no test specified\" && exit 0"
-},
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jjjjhogan/goldengoose.git"
@@ -28,5 +28,8 @@
   "dependencies": {
     "bootstrap": "^5.3.8",
     "sass": "^1.98.0"
+  },
+  "devDependencies": {
+    "astro": "^5.7.10"
   }
 }
